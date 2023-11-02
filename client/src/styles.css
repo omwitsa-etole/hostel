@@ -1,0 +1,123 @@
+.single-boking-form {
+	text-align:center;
+    padding: 40px 40px 50px 40px;
+    background: #fff;
+}
+.single-boking-form .sub-title h5 {
+    letter-spacing: 3px;
+}
+.single-boking-form .main-title h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #000000;
+    margin: 10px 0 30px;
+}
+.single-boking-form .boking-titles h4 {
+    font-size: 17px;
+    font-weight: 500;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #000;
+}
+.single-boking-form .form-button button {
+    display: inline-block;
+    color: #fff;
+    padding: 12px 160px;
+    text-transform: capitalize;
+    transition: 0.5s;
+    font-size: 16px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    font-weight: 400;
+    background: #DBA765;
+    border: 1px solid #DBA765;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.single-boking-form .form-button button:hover {
+    background: #232323;
+    border: 1px solid #232323;
+}
+.row {
+    
+    display: flex;
+   
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.form_box {
+    margin-bottom: 15px;
+}
+.form_box input {
+    width: 100%;
+    height: 54px;
+    padding: 0 10px 0 20px;
+    background: #F8F5F0;
+    border-radius: 3px;
+    transition: .5s;
+    border: 1px solid #e6e6e6;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #666;
+    text-transform: capitalize;
+    font-size: 12px;
+}
+.form_box select {
+    width: 100%;
+    height: 54px;
+    padding: 0 10px 0 20px;
+    background: #F8F5F0;
+    border-radius: 3px;
+    transition: .5s;
+    border: 1px solid #e6e6e6;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #666;
+}
+.form_box textarea {
+    width: 100%;
+    padding-left: 20px;
+    padding-top: 15px;
+    border: 1px solid #EEECFE;
+    height: 150px;
+    outline: 0;
+    transition: .5s;
+    background: #fff;
+    margin-top: 7px;
+}
+ .form_box input:focus{
+    box-shadow: 0 0 0 .2rem rgba(0,123,255,.25);
+    border-color: #80bdff;
+    outline: 0;
+}
+ .form_box textarea:focus{
+    box-shadow: 0 0 0 .2rem rgba(0,123,255,.25);
+    border-color: #80bdff;
+}
+ input::placeholder {
+    color: #94A9A8;
+}
+ textarea#massage::placeholder {
+    color: #94A9A8;
+}
+.form-button {
+    text-align: left;
+    margin-top: 24px;
+}
+.form-button button {
+    display: inline-block;
+    color: #fff;
+    padding: 10px 28px;
+    text-transform: capitalize;
+    transition: 0.5s;
+    font-size: 15px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    margin-top: 5px;
+    font-weight: 400;
+    background: #DBA765;
+    border: 1px solid #DBA765;
+}
+.form-button button:hover {
+    color: #DBA765;
+    background: #fff;
+}

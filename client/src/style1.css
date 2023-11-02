@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.radio-label:hover {
+  background-color: #e6e6e6;
+}
+
+.radio-input-1 {
+  position: absolute;
+  opacity: 0;
+}
+
+.radio-input-1:checked + .radio-label {
+  background-color: #ffc3c3;
+  border-color: #ff1111;
+}
+
+.radio-input-1:focus + .radio-label {
+  outline: 2px solid #ff1111;
+}
+
+.radio-inner-circle {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  border: 2px solid #888;
+  border-radius: 50%;
+  margin-right: 0.5em;
+  transition: border-color 0.2s;
+  position: relative;
+}
+
+.radio-label:hover .radio-inner-circle {
+  border-color: #555;
+}
+
+.radio-input-1:checked + .radio-label .radio-inner-circle {
+  border-color: #ff1111;
+}
+
+.radio-input-1:checked + .radio-label .radio-inner-circle::after {
+  content: '';
+  display: block;
+  width: 0.5em;
+  height: 0.5em;
+  background-color: #ff1111;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+    
+/* Gender selector made by: csozi | Website: www.csozi.hu*/
+
+.radio-input {
+  display: flex;
+  flex-wrap: wrap;
+  width: 320px;
+  height: fit-content;
+  gap: 10px;
+  scale: 0.7;
+}
+
+.radio-input input {
+  height: 100px;
+  width: 100px;
+  translate: 0px 55px;
+  opacity: 0;
+  z-index: 10;
+}
+
+.card {
+  height: 100px;
+  width: 100px;
+  border: solid darkgray;
+  background-color: lightgray;
+  border-radius: 10px;
+  translate: 0px -55px;
+  position: relative;
+  z-index: 9;
+  transition: 0.2s;
+  color: darkgray;
+}
+
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  translate: -50% 0px;
+}
+
+.card .title {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  font-size: 23px;
+  bottom: 0px;
+  font-weight: bold;
+}
+
+.i_female:hover ~ .female {
+  filter: brightness(1.1);
+}
+
+.i_male:hover ~ .male {
+  filter: brightness(1.1);
+}
+
+.i_no-gender:hover ~ .no-gender {
+  filter: brightness(1.1);
+}
+
+.i_female:checked ~ .female {
+  border: solid #ff87bf;
+  color: #ff87bf;
+  background-color: #ffb8d9;
+}
+
+.i_male:checked ~ .male {
+  border: solid #3d44ff;
+  color: #3d44ff;
+  background-color: #85a5ff;
+}
+
+.i_no-gender:checked ~ .no-gender {
+  border: solid #c9c600;
+  color: #c9c600;
+  background-color: #fffd82;
+}
+.rating {
+  display: inline-block;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label {
+  float: right;
+  cursor: pointer;
+  color: #ccc;
+  transition: color 0.3s;
+}
+
+.rating label:before {
+  content: '\2605';
+  font-size: 30px;
+}
+
+.rating input:checked ~ label,
+.rating label:hover,
+.rating label:hover ~ label {
+  color: #6f00ff;
+  transition: color 0.3s;
+}
